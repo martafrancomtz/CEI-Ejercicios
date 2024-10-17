@@ -1,0 +1,72 @@
+/* 
+Texto que no se ve jeje
+
+
+*/
+
+h1{
+    color:cadetblue;
+}
+
+p{
+    font-size: 16px;
+}
+
+.header {
+    color: aliceblue;
+    background-color: rgb(33, 34, 34);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 16px;
+    padding: 30px;
+    font-family:sans-serif;
+}
+
+.logo{
+    display:inline-block;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav{
+    background-color: rgb(33, 34, 34);
+    text-align: right;
+    display:inline-block;
+    margin-left: 65%;
+}
+
+.nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 10px;
+}
+
+a:hover{
+    color:rgb(114, 220, 186);
+}
+
+.Producto{  
+    text-align: center;
+    width: 60%;      
+    padding: 20px;
+    margin: 20px;   
+    background-color: #dadada; 
+    color: rgb(0, 0, 0);    
+    font-family: sans-serif;
+}
+
+section{
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.footer{
+    color: aliceblue;
+    background-color: rgb(33, 34, 34);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    font-family:sans-serif;
+    text-align: center;
+} 
