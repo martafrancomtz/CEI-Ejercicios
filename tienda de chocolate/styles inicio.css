@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(212, 183, 158);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background-color: rgb(128, 41, 0);
+    padding: 20px;
+    color: white;
+}
+
+.nav{
+    display: flex;
+    gap: 20px;    
+}
+
+.nav a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(200, 194, 186);
+}
+
+.nav a:hover{
+    color: rgb(183, 123, 55);
+}
+
+.imagen img{    /*imagen full pantalla, img dsps del nombre es para la imagen juto y no el div entero*/
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.intro{
+    margin: 30px;
+}
+
+.intro h1{
+    font-size:40px;
+    text-align: center;
+    padding: 20px;
+    color: bisque;
+}
+
+.intro h2{
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+    padding-left: 300px;
+    padding-right: 300px;
+    color: rgb(62, 37, 6);
+    text-transform: uppercase;
+}
+
+.intro p{
+    font-size:20px;
+    text-align: center;
+    padding: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    color: rgb(62, 37, 6);
+}
+
+footer{
+    background-color: rgb(128, 41, 0);
+    font-size: 16px;
+    padding: 40px;
+    color: beige;
+}
