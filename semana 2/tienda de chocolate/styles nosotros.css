@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -5,9 +8,11 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     background-color: rgb(212, 183, 158);
 }
+
+/*header*/
 
 .header{
     display: flex;
@@ -16,12 +21,14 @@ body{
     background-color: rgb(128, 41, 0);
     padding: 20px;
     color: white;
+    
 }
 
 .logo{
     font-size: 20px; 
     font-weight: bold; 
-    margin-right: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 #NosotrosMenu{
@@ -43,19 +50,17 @@ body{
     color: rgb(183, 123, 55);
 }
 
-.intro{
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+/*intro*/
 
 .texto{
     display: block;
     justify-content: center;
 }
 
-.img img{
-    width: 500px;
+.intro{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .intro h1{
@@ -89,9 +94,29 @@ body{
     text-align: justify;
 }
 
+.img img{
+    width: 500px;
+}
+
+video{
+    margin: 30px;
+    margin-bottom: 150px;
+    width: 60%;
+    display: flex;
+    justify-self: center;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+}
+
+/*footer*/
+
 footer{
     background-color: rgb(128, 41, 0);
     font-size: 16px;
     padding: 40px;
     color: beige;
 }
+
