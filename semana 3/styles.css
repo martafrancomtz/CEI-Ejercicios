@@ -1,31 +1,56 @@
 
-.layout{
+.gridcontainter{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 18px;
-    grid-template-rows: auto 1fr auto;
+    grid-template-areas:  
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+    gap: 10px;
 
 }
 
 header{
-    grid-column: 1 / -1;
+    grid-area: header;
     background-color: aqua;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
 }
 
 nav{
-    grid-column: 1 / 2;
+    grid-area: nav;
     background-color:rgb(255, 78, 78);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
 }
 
 main{
-    grid-column: 2 / 3;
-    background-color: rgb(247, 140, 52);
+    grid-area: main;
+    background-color: rgb(247, 202, 52);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(235, 44, 238);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
 }
 
 footer{
-    grid-column: 1 / -1;
+    grid-area: footer;
     background-color: rgb(44, 238, 44);
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
 }
+
+
+
 
 
 
