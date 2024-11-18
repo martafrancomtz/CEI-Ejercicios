@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgb(232, 232, 232);
+}
+
+p{
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.p-1{
+    position: relative;
+    left: 25vw;
+    top: 50px;
+}
+
+.p-2{
+    position: relative;
+    right: 25vw;
+    top: -50px;
+}

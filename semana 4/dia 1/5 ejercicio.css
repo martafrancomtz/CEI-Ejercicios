@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgb(232, 232, 232);
+}
+
+.texto{
+    width: 50vw;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.primero{
+    position: sticky;
+    top: 0px;
+}
+
+.segundo{
+    position: sticky;
+    top: 0px;
+    background-color: aquamarine;
+}
+
+.p-1{
+    position: relative;
+    left: 25vw;
+    top: 50px;
+}
+
+.p-2{
+    position: relative;
+    right: 25vw;
+    top: -50px;
+}

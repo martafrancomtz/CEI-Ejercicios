@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgb(232, 232, 232);
+    height: 100vh;
+}
+
+div{
+    position: absolute;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.div-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgb(157, 212, 74);
+}
+
+.div-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: chocolate;
+}
+
+.div-3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color:deeppink;
+}
+
+.div-4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: blue;
+}
+
+.div-5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: darkcyan;
+}
