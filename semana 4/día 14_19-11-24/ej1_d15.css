@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgb(232, 232, 232);
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+    align-items: baseline;
+    
+}
+
+.logos a img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.logos img {
+    width: 150px;
+    height: auto;
+}
