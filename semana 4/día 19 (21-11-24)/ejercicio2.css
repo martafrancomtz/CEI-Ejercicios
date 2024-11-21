@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    transition: all 1s ease; /* Transición para suavizar el cambio */
+}
+
+/* Primer div: Cambiar su ancho en bucle */
+.uno {
+    background-color: #3498db; /* Azul */
+    animation: expand-shrink 3s infinite; /* Animación de cambiar tamaño */
+}
+
+/* Segundo div: Rotar sobre sí mismo */
+.dos {
+    background-color: #e74c3c; /* Rojo */
+    animation: rotate 3s infinite linear; /* Animación de rotación */
+}
+
+/* Tercer div: Cambiar de color */
+.tres {
+    background-color: #2ecc71; /* Verde */
+    animation: change-color 3s infinite; /* Animación de cambio de color */
+}
+
+/* Animación para el primer div (cambiar de ancho) */
+@keyframes expand-shrink {
+    0%, 100% {
+        width: 100px;
+    }
+    50% {
+        width: 200px;
+    }
+}
+
+/* Animación para el segundo div (rotación) */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animación para el tercer div (cambio de color) */
+@keyframes change-color {
+    0% {
+        background-color: #2ecc71; /* Verde */
+    }
+    25% {
+        background-color: #f39c12; /* Amarillo */
+    }
+    50% {
+        background-color: #9b59b6; /* Púrpura */
+    }
+    75% {
+        background-color: #e74c3c; /* Rojo */
+    }
+    100% {
+        background-color: #2ecc71; /* Verde */
+    }
+}

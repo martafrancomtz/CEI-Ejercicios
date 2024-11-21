@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgb(232, 232, 232);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #78afb4;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+}
+
+.imagenes img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.multiply {
+    mix-blend-mode: multiply;
+}
+
+.screen {
+    mix-blend-mode: screen;
+}
+
+.overlay {
+    mix-blend-mode: overlay;
+}
+
+.darken {
+    mix-blend-mode: darken;
+}
+
+.lighten {
+    mix-blend-mode: lighten;
+}
+
+.color-dodge {
+    mix-blend-mode: color-dodge;
+}
+
+.color-burn {
+    mix-blend-mode: color-burn;
+}
+
+.hard-light {
+    mix-blend-mode: hard-light;
+}
+
+.soft-light {
+    mix-blend-mode: soft-light;
+}
+
+.difference {
+    mix-blend-mode: difference;
+}

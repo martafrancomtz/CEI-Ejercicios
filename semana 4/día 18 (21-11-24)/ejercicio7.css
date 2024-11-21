@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(232, 232, 232);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap: 60px;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.uno {
+    background: linear-gradient(to right, rgb(249, 1, 105), rgb(255, 94, 0)); 
+}
+
+.dos {
+    background: radial-gradient(blue, orange);
+}
+
+.tres {
+    background: conic-gradient(rgb(49, 218, 148), rgb(237, 235, 101));
+}
+
+.cuatro {
+    background: repeating-linear-gradient(rgb(226, 116, 125), rgb(103, 168, 133)40px, rgb(232, 51, 171)30px);
+}
+
+.cinco { 
+    background: repeating-radial-gradient(#07d768, rgb(39, 180, 231)40px); 
+}

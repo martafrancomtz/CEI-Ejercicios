@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    transition: all 0.5s ease; 
+    border-radius: 10px;
+}
+
+.uno {
+    background-color: #259658;
+}
+
+.uno:hover {
+    width: 200px; 
+}
+
+.dos {
+    background-color: #dde455;
+}
+
+.dos:hover {
+    height: 200px; 
+}
+
+.tres {
+    background-color: #0404ff;
+}
+
+.tres:hover {
+    width: 200px; 
+    height: 200px;
+}

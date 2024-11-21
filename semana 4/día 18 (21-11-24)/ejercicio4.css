@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: rgb(232, 232, 232);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.texto {
+    text-align: center;
+    text-decoration: underline;
+    text-indent: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-shadow: 2px 2px 2px #aaa;
+    color: #333;
+    font-size: 60px;
+    margin-top: 300px;
+}
