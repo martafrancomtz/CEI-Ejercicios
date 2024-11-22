@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,7 @@
 
 body {
     font-family: "Montserrat", sans-serif;
+    font-weight: 500;
     background-color: #c1e0d1;
     display: flex;
     justify-content: center;
@@ -45,8 +48,27 @@ textarea {
     height: 150px;
 }
 
+.checkbox {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkbox label {
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+}
+
 .button {
-    text-align: center;
+    text-align: right;
 }
 
 button {
