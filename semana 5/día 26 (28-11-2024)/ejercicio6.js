@@ -1,4 +1,7 @@
-function changeColor(newColor) {
-    const elem = document.getElementById("demo");
-    elem.style.color = newColor;
+let n = 0;
+
+while (n < 8) {
+    n++;
 }
+
+console.log(n);
