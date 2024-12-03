@@ -1,21 +1,17 @@
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+  }
 
-
-function cuadrado(size){
-    for(let i = 1; i <= size; i++){                   
-            console.log("*****")              
-    }
+function changeNumbers() {
+    let boxes = document.querySelectorAll(".box")
+    boxes.forEach(box => {
+        let n = getRandomInt(100);
+        box.innerHTML = n;
+    }); 
 }
 
-cuadrado (5);
+//Haz una web con 5 div de 100px por 100px, numerados
+//del 1 al 5 y un botón. Al pulsar el botón tiene cambiar el  
+//número de su interior aleatoriamente.
 
-function cuadrado(size){
-    for(let i = 1; i <= size; i++){  
-        let line = " ";
-        for(let j = 1; j <= size; j++){  
-            line += "*";
-        }
-            console.log("*****")              
-    }
-}
 
-cuadrado (50);
