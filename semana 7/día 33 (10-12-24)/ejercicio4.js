@@ -1,9 +1,14 @@
+const myDiv = document.getElementById('Div');
+const button = document.getElementById('toggleButton');
+let size = false; 
 
-
-document.addEventListener( 'mousemove', (event) => {
-    console.log(`X=${event.clientX}, Y=${event.clientY}`)
-})
-
-
-
-
+button.addEventListener('click', () => {
+    if (size) {
+        Div.style.width = '20vw'; 
+        Div.style.backgroundColor = 'lightblue';
+    } else {
+        Div.style.width = '80vw'; 
+        Div.style.backgroundColor = 'salmon';
+    }
+    size = !size
+});
