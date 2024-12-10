@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+    <script src="ejercicio2y3.js" defer></script>
+    <style>
+    #Div {
+        width: 200px;
+        height: 200px;
+        border-radius: 60px;
+        background-color: greenyellow;
+        transition: transform 2s ease-in-out;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    body{
+        margin: 20px;
+    }
+    .animado {
+            animation: fading 3s infinite;
+    }
+    @keyframes fading {
+        0% { transform: scale(0%); }
+        50% { transform: scale(100%); }
+        100% { transform: scale(0%); }
+    }
+    </style>
+</head>
+<body>
+    <div id="Div"></div>
+        <button id="animer">Animar</button>
+        <button id="unanimer">Unanimer</button>
+        <button id="toggler">Toggler</button>
+</body>
+</html>

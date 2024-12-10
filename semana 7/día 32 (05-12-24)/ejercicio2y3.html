@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+    <script src="ejercicio2y3.js" defer></script>
+    <style>
+    #Div {
+        width: 200px;
+        height: 200px;
+        border-radius: 60px;
+        background-color: greenyellow;
+        transition: transform 2s ease-in-out;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    body{
+        margin: 20px;
+    }
+    .animado {
+            animation: girar 2s infinite;
+    }
+    @keyframes girar {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+    </style>
+</head>
+<body>
+    <div id="Div"></div>
+        <button id="animer">Animar</button>
+        <button id="unanimer">Unanimer</button>
+        <button id="toggler">Toggler</button>
+</body>
+</html>
