@@ -1,14 +1,8 @@
-const Div = document.getElementById('Div');
-const button = document.getElementById('toggleButton');
-let rotar = true;
+function open_img(url){
+    document.querySelector("#lightbox img").setAttribute("src", url);
+    document.querySelector("#lightbox").classList.add("active");
+}
 
-button.addEventListener('click', () => {
-    if (rotar) {
-        Div.classList.remove('rotate');
-        Div.classList.add('scale');
-    } else {
-        Div.classList.remove('scale');
-        Div.classList.add('rotate');
-    }
-    rotar = !rotar; 
-});
+function close_img(){
+    document.querySelector("#lightbox").classList.remove("active");
+}
