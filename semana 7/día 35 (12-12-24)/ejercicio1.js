@@ -1,6 +1,19 @@
-function menu(id){
-    document.querySelector("li.active").classList.remove("active");
-    document.querySelector("main div.active").classList.remove("active");
-    document.querySelector("#menu-" + id).classList.add("active");
-    document.querySelector("#div-" + id).classList.add("active");
+let currentIndex = 0;
+
+document.querySelector('.prev-button').addEventListener('click', () => {
+   navigate(-1);
+});
+
+document.querySelector('.next-button').addEventListener('click', () => {
+   navigate(1);
+});
+
+function navigate(direction) {
+   const galleryContainer = document.querySelector('.gallery-container');
+   const totalImages = document.querySelectorAll('.gallery-item').length;
+
+   currentIndex = (currentIndex + direction + totalImages) % totalImages;
+   const offset = -currentIndex * 100;
+
+   galleryContainer.style.transform = `translateX(${offset}%)`;
 }

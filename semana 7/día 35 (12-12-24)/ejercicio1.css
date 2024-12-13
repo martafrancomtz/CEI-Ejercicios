@@ -1,53 +1,42 @@
-main{
-    width: 96vw;
-    border-top: 1px solid;
-    padding: 2vw;
-    text-align: justify;
+/* Estilo básico para el Slider*/
+#gallery {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
-
-main div{
-    display: none;
-}
-
-div.active{
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-}
-
-main img{
-    width: 20vw;
-    margin: 40PX;
-    cursor: pointer;
-}
-
-ul{
+ 
+.gallery-container {
     display: flex;
-    list-style: none;
-    justify-content: space-around;
-    padding-bottom: 10px;
-    padding-top: 10px;
+    transition: transform 0.5s ease-in-out;
+}
+ 
+.gallery-item {
+   min-width: 100%;
+   box-sizing: border-box;
 }
 
-li{
-    cursor: pointer;
-    border: 1px solid black;
-    padding: 10px;
+.gallery-item img {
+   width: 100%;
+   display: block;
 }
 
-li:hover{
-    color:white;
-    background-color: cadetblue;
+/* Navegación del Slider */
+.gallery-navigation {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+   top: -50px;
 }
 
-li.active{
-    color: white;
-    background-color: cadetblue;
+.nav-button {
+   background-color: #008CBA;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   cursor: pointer;
+   border-radius: 5px;
 }
 
-li.active:hover{
-    color:rgb(175, 218, 220);
-    background-color: rgb(38, 90, 92);
+.nav-button:hover {
+background-color: #005f5f;
 }
-
-
