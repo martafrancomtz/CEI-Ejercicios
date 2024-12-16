@@ -1,47 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos JS</title>
-    <script src="ejercicio1.js" defer></script>
-    <link rel="stylesheet" href="ejercicio1.css">
+  <meta charset="UTF-8">
+  <title>Dual Slider</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="ejercicio1.css">
+
+  
 </head>
- 
-</head>
+
 <body>
-    <header>
-        <ul>
-            <li id="menu-1" class="active" onclick="menu(1)">menu 1</li>
-            <li id="menu-2" onclick="menu(2)">menu 2</li>
-            <li id="menu-3" onclick="menu(3)">menu 3</li>
-            <li id="menu-4" onclick="menu(4)">menu 4</li>
-        </ul>
-    </header>
+  <div id="container">
+  
+  <div id="slider-1">
+    <ul class="slides">
+      <li class="gallery-cell">
+        <img src="foto1.jpg" >
+      </li>
+      <li class="gallery-cell">
+        <img src="foto2.jpg" >
+      </li>
+      <li class="gallery-cell">
+        <img src="foto3.jpg" >
+      </li>
+    </ul>
+  </div>
 
-    <main>
-        <div class="active" id="div-1">
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-            <img onclick="open_img('foto1.jpg')" src="foto1.jpg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id nisl ac diam accumsan accumsan. Nullam euismod a nibh ut scelerisque. In non turpis non ex suscipit aliquam eu nec felis. Nunc fringilla aliquet dui et eleifend. Nullam hendrerit tempor ipsum. Vestibulum sollicitudin dignissim mattis. Integer suscipit volutpat urna sed faucibus. In quis turpis mi. Proin aliquet augue lacus, auctor accumsan ex vehicula lobortis. Etiam metus massa, tincidunt at ligula sed, porta mollis felis. Etiam quis bibendum tellus, ut tempor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-        </div>
+  <div id="slider-2">
+    <ul class="slides">
+     <li class="gallery-cell">
+       <img src="foto1.jpg" >
+      </li>
+      <li class="gallery-cell">
+        <img src="foto2.jpg" >
+      </li>
+      <li class="gallery-cell">
+        <img src="foto3.jpg" >
+      </li>
+    </ul>
+    
+    <button class="btn-next">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.3 13.4">
+        <path id="arrow-line" fill="#231F20" d="M0 5.9h28.7v1H0z"/>
+        <path fill="#231F20" d="M24.1 13.4l-.8-.6 4.8-6.4L23.3 0l.8-.6 5.2 7"/>
+      </svg>
+    </button>
+    
+  </div>
+  
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://flickity.metafizzy.co/flickity.pkgd.min.js'></script>
 
-        <div id="div-2">
-            <h1>Donec nec nisi id nisi cursus laoreet vel eu felis.</h1>
-            <img onclick="open_img('foto2.jpg')" src="foto2.jpg">
-            Donec nec nisi id nisi cursus laoreet vel eu felis. Duis cursus sed urna vitae scelerisque. Aliquam et elementum ex. Donec dapibus ac mauris ut congue. Morbi pulvinar neque metus, vitae faucibus justo dictum ut. Integer varius justo quis turpis sagittis, ut aliquam velit lobortis. Proin iaculis sit amet turpis ac aliquet. Etiam massa magna, tempus a accumsan a, hendrerit sed est. Vestibulum vel lacinia metus, quis ultricies metus. Curabitur vestibulum pulvinar purus at vehicula. Donec felis massa, tincidunt in ipsum at, faucibus ullamcorper mi. Nulla non cursus mauris. Fusce facilisis erat sed est cursus, ac aliquet velit interdum.        </div>
+    <script src="ejercicio1.js"></script>
 
-        <div id="div-3">
-            <h1>Aenean in euismod nunc, vel pretium quam.</h1>
-            <img onclick="open_img('foto3.jpg')" src="foto3.jpg">
-            Aenean in euismod nunc, vel pretium quam. Vivamus mollis malesuada augue in fringilla. Maecenas ut urna risus. Ut erat ipsum, lobortis at nisl eu, placerat lacinia libero. Vivamus mattis erat justo, nec pellentesque ante dapibus non. Quisque accumsan vestibulum varius. Donec ultricies cursus ante eget luctus. Pellentesque volutpat suscipit varius. Suspendisse dignissim sem lacus, at tincidunt justo sollicitudin sit amet. Sed tristique sapien elementum sapien ultrices mollis non fermentum arcu. Phasellus sodales, justo nec ultrices porttitor, lorem ante pulvinar libero, a tempor massa ex a elit. Praesent posuere viverra velit, molestie vulputate sem.
-        </div>
-
-        <div id="div-4">
-            <h1>In pretium, purus et feugiat suscipit, neque augue vestibulum erat.</h1>
-            <img onclick="open_img('foto4.jpg')" src="foto4.jpg">
-            In pretium, purus et feugiat suscipit, neque augue vestibulum erat, nec vulputate purus leo nec metus. In tristique diam eu turpis consectetur, ut pharetra quam posuere. Suspendisse vitae hendrerit arcu. Pellentesque ultrices suscipit felis auctor consectetur. Maecenas mattis, nibh nec vehicula rhoncus, lacus mi cursus odio, vel sollicitudin elit urna nec ante. Nulla porta neque purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie congue purus ac pellentesque. Mauris et nunc pellentesque, consectetur tellus vitae, volutpat felis. Pellentesque facilisis urna non lobortis pulvinar. Mauris dapibus, est vel accumsan consectetur, magna risus fermentum velit, eu pharetra orci lectus et nibh. Nunc convallis ipsum at nibh efficitur tempor. In hac habitasse platea dictumst.
-        </div>
-    </main>
 </body>
 </html>

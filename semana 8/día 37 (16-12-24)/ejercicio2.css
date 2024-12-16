@@ -1,0 +1,47 @@
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+}
+
+#carouselr-container {
+    height: 300px;
+    width: 100vw;
+    background: #3f4141;
+    box-shadow: 5px 5px 8px gray inset;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#carouselr-container .btn {
+    position: absolute;
+    top: calc(50% - 10px);
+    height: 30px;
+    width: 30px;
+    border-left: 8px solid red;
+    border-left: 8px solid red;
+    cursor: pointer;
+}
+
+#carouselr-container .btn:hover {
+    transform: scale(1.2);
+}
+
+#carouselr-container .btn.inactive {
+    border-color: rgb(153, 121, 126);
+}
+
+#carouselr-container .btn.first-of-type {
+    transform: rotate(-45deg);
+    left: 10px;
+}
+
+#carouselr-container .btn.last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+}

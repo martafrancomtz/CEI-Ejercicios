@@ -1,6 +1,19 @@
-function menu(id){
-    document.querySelector("li.active").classList.remove("active");
-    document.querySelector("main div.active").classList.remove("active");
-    document.querySelector("#menu-" + id).classList.add("active");
-    document.querySelector("#div-" + id).classList.add("active");
-}
+var $gallery1 = $('#slider-1 .slides').flickity({
+  pageDots: false,
+  prevNextButtons: false,
+  wrapAround: true,
+  draggable: false
+});
+   
+var $gallery2 = $('#slider-2 .slides').flickity({
+  pageDots: false,
+  prevNextButtons: false,
+  initialIndex: 1,
+  wrapAround: true,
+  draggable: false
+});
+
+$('.btn-next').on( 'click', function() {
+  $gallery1.flickity('next');
+  $gallery2.flickity('next');
+});

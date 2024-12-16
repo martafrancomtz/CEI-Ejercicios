@@ -1,53 +1,96 @@
-main{
-    width: 96vw;
-    border-top: 1px solid;
-    padding: 2vw;
-    text-align: justify;
+#container {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
-
-main div{
-    display: none;
+#slider-1 {
+  width: 400px;
 }
-
-div.active{
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
+#slider-2 {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 150px;
+  height: 250px;
 }
-
-main img{
-    width: 20vw;
-    margin: 40PX;
-    cursor: pointer;
+.slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
-
-ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-    padding-bottom: 10px;
-    padding-top: 10px;
+.slides img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
-
-li{
-    cursor: pointer;
-    border: 1px solid black;
-    padding: 10px;
+/*! Flickity v1.0.2
+http://flickity.metafizzy.co
+---------------------------------------------- */
+.flickity-enabled {
+  position: relative;
 }
-
-li:hover{
-    color:white;
-    background-color: cadetblue;
+.flickity-enabled:focus {
+  outline: none;
 }
-
-li.active{
-    color: white;
-    background-color: cadetblue;
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
 }
-
-li.active:hover{
-    color:rgb(175, 218, 220);
-    background-color: rgb(38, 90, 92);
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-
-
+/* draggable */
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.gallery-cell {
+  width: 100%;
+}
+.btn-next {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  width: 60px;
+  height: 20px;
+  padding: 0;
+}
+.btn-next:focus {
+  outline: none;
+}
+.btn-next svg {
+  display: block;
+  width: 60px;
+  height: 20px;
+}
+.btn-next svg #arrow-line {
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform-origin: right bottom;
+          transform-origin: right bottom;
+}
+.btn-next:hover svg #arrow-line {
+  -webkit-transform: scaleX(1.5);
+          transform: scaleX(1.5);
+}
