@@ -45,3 +45,56 @@
     transform: rotate(135deg);
     right: 10px;
 }
+
+#carouselr-container #carrouselr {
+    height: 100%;
+    width: 1000%;
+    display: flex;
+    transition: all .5s;
+}
+
+#carouselr-container #carrouselr .carrousel {
+    height: 90%;
+    margin: auto 10px;
+    display: grid;
+    background-color: #c6c6c6;
+    box-shadow: 2px 2px 4px 2px white, -2px -2px 4px 2px white;
+    place-items: center;
+}
+
+#carouselr-container #carrouselr .carrousel span {
+    color: white;
+    font-size: 150px;
+}
+
+@media only screen and (min-width: 1100px) {
+
+    #carouselr-container #carrouselr .carrousel {
+        width: calc(2.5% -  20px);
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    
+    #carouselr-container #carrouselr .carrousel {
+        width: calc(3.3333333% -  20px);
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    
+    #carouselr-container #carrouselr .carrousel {
+        width: calc(5% -  20px);
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    
+    #carouselr-container #carrouselr .carrousel {
+        width: calc(10% -  20px);
+    }
+
+}

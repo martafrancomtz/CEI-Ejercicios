@@ -1,0 +1,25 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.fondo {
+  position: relative;
+  height: 800px;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.f1 {
+  background-image: url(foto2.jpg);
+}
+
+.f2 {
+  background-image: url(foto3.jpg);
+}
+

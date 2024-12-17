@@ -1,41 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos JS</title>
-    <script src="ejercicio3.js" defer></script>
+    <title>Carrusel Continuo</title>
     <link rel="stylesheet" href="ejercicio3.css">
+    <script src="ejercicio3.js" defer></script>
 </head>
-
 <body>
-    <div class="slideshow-container">
-        <div class="my-slides rotate">
-            <div class="numbertext">1 / 3</div>
-            <img src="foto1.jpg" style="width:100%">
-            <div class="text">Caption one</div>
-        </div>        
-        <div class="my-slides rotate">
-            <div class="numbertext">2 / 3</div>
-            <img src="foto2.jpg" style="width:100%">
-            <div class="text">Caption two</div>
-        </div>  
-        <div class="my-slides rotate">
-            <div class="numbertext">3 / 3</div>
-            <img src="foto3.jpg" style="width:100%">
-            <div class="text">Caption three</div>
-        </div>  
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-        &lt; &gt; 
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-</body>
 
+    <div class="container">
+        <div class="carousel-view">
+          <button id="prev" class="prev">
+          
+          </button>
+          <div id="item-list" class="item-list">
+               <img id="item" class="item" src="foto1.jpg"/>
+                <img id="item" class="item" src="foto2.jpg"/>
+                <img id="item" class="item" src="foto3.jpg"/>
+                <img id="item" class="item" src="foto4.jpg"/>
+                <img id="item" class="item" src="foto5.jpg"/>
+                <img id="item" class="item" src="foto6.jpg"/>
+                <img id="item" class="item" src="foto7.jpg"/>
+              </div>
+          <button id="next" class="next">
+               
+              </button>
+          </div>
+      </div>
+ 
+</body>
 </html>
