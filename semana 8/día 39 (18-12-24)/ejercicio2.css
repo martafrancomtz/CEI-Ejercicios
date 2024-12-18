@@ -1,0 +1,30 @@
+body {
+    background: #54a280;
+}
+
+#container {
+    margin: 10em auto;
+    height: 10em;
+    width: 10em;
+    position: relative;
+}
+
+#square1 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 100%;
+    background: #dfe6e9;
+    box-shadow: inset -10px -5px 0px 0px rgba(178,190,195,.3);
+}
+
+.eyeball {
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    border-radius: 100%;
+    background: #2d3436;
+    overflow: hidden;
+    left: 25%;
+    top: 25%;
+}
